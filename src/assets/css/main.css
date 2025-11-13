@@ -1,1 +1,43 @@
 @import 'tailwindcss';
+
+@theme {
+  --animate-marquee-scroll: marquee-scroll 40s linear infinite;
+  @keyframes marquee-scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  /* Jika Anda ingin arah sebaliknya (kanan ke kiri) */
+  @keyframes marquee-scroll-reverse {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  /* Optional: Keyframes untuk fade in/out jika Anda ingin efek melayang dari samping */
+  @keyframes marquee-fade-in {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    5% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+    95% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+  }
+}
