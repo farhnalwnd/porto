@@ -9,42 +9,42 @@ import 'swiper/css/bundle'
 const projectImages = ref([
   {
     id: 1,
-    path: 'logo.png',
+    path: 'favicon.ico',
     title: 'Project 1',
   },
   {
     id: 2,
-    path: 'logo.png',
+    path: 'favicon.ico',
     title: 'Project 2',
   },
   {
     id: 3,
-    path: 'logo.png',
+    path: 'favicon.ico',
     title: 'Project 3',
   },
   {
     id: 4,
-    path: 'logo.png',
+    path: 'favicon.ico',
     title: 'Project 4',
   },
   {
     id: 5,
-    path: 'logo.png',
+    path: 'favicon.ico',
     title: 'Project 5',
   },
   {
     id: 6,
-    path: 'logo.png',
+    path: 'favicon.ico',
     title: 'Project 6',
   },
   {
     id: 7,
-    path: 'logo.png',
+    path: 'favicon.ico',
     title: 'Project 7',
   },
   {
     id: 8,
-    path: 'logo.png',
+    path: 'favicon.ico',
     title: 'Project 8',
   },
 ])
@@ -63,7 +63,7 @@ const modules = [EffectCoverflow]
 <template>
   <Swiper
     :slides-per-view="3"
-    :space-between="25"
+    :space-between="5"
     :modules="modules"
     :loop="true"
     :effect="'coverflow'"
@@ -95,6 +95,6 @@ const modules = [EffectCoverflow]
 <style scoped>
 @reference 'tailwindcss';
 .img {
-  @apply rounded-2xl;
+  @apply rounded-2xl w-full h-auto object-cover;
 }
 </style>
