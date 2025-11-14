@@ -18,6 +18,7 @@
   }
   body {
     background-image: url('/bg.jpg');
+    lazyload: true;
     @apply bg-center bg-repeat;
   }
   html {
