@@ -8,35 +8,35 @@ const services = ref([
     id: 1,
     icon: '/icons/web-developer.svg',
     alt: 'web-developer-icon',
-    skill: 'Web Development',
+    title: 'Web Development',
     description: 'Building responsive and dynamic websites using modern technologies.',
   },
   {
     id: 2,
     icon: '/icons/iot.svg',
     alt: 'iot-icon',
-    skill: 'IoT Developer',
+    title: 'IoT Developer',
     description: 'Creating user-friendly mobile applications for Android and iOS platforms.',
   },
   {
     id: 3,
     icon: '/icons/data-science.svg',
     alt: 'data-science-icon',
-    skill: 'Data Science',
+    title: 'Data Science',
     description: 'Designing intuitive user interfaces and enhancing user experience.',
   },
   {
     id: 4,
     icon: '/icons/devops.svg',
     alt: 'devops-icon',
-    skill: 'DevOps Engineer',
+    title: 'DevOps Engineer',
     description: 'Designing intuitive user interfaces and enhancing user experience.',
   },
   {
     id: 5,
     icon: '/icons/web-design.svg',
     alt: 'web-design-icon',
-    skill: 'Web Design',
+    title: 'Web Design',
     description: 'Designing intuitive user interfaces and enhancing user experience.',
   },
 ])
@@ -120,18 +120,8 @@ const marqueeTools = ref([
     <div class="w-full flex items-center justify-center">
       <h2 class="text-3xl font-bold text-center mb-8">What I Do</h2>
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:flex lg:flex-wrap lg:justify-center gap-6">
-      <serviceCard v-for="service in services" :key="service.id">
-        <template #icon>
-          <img :src="service.icon" :alt="service.alt" class="w-16 h-16 scale-90" />
-        </template>
-        <template #skill>
-          <h3 class="text-xl font-semibold mb-2">{{ service.skill }}</h3>
-        </template>
-        <template #description>
-          <p class="text-amber-200 text-center">{{ service.description }}</p>
-        </template>
-      </serviceCard>
+    <div class="grid w-full justify-items-center sm:flex sm:flex-wrap sm:justify-center gap-6">
+      <serviceCard :datas="services" />
     </div>
   </div>
 
