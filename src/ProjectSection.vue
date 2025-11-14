@@ -143,7 +143,7 @@ const currentSwiperConfig = computed(() => {
     <div class="flex flex-col lg:flex-row lg:gap-8">
       <div class="w-full lg:w-1/3 mb-8 lg:mb-0 lg:flex lg:flex-col lg:justify-center">
         <div class="flex items-center justify-center">
-          <h2 class="text-3xl font-bold text-center">Proyek Unggulan Kami</h2>
+          <h2 class="text-3xl font-bold text-center">Project Portofolio</h2>
         </div>
         <p class="mt-4 text-center">
           Ini adalah tulisan yang Anda minta. Di layar besar, tulisan ini akan berada di sebelah

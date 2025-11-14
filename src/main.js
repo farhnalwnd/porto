@@ -5,13 +5,13 @@ import skillSection from './skillSection.vue'
 import headerSection from './headerSection.vue'
 import navSection from './navSection.vue'
 import footerSection from './footerSection.vue'
-import educationSection from './educationSection.vue'
+// import educationSection from './educationSection.vue'
 
 const app = createApp(ProjectSection)
 const skillSectionApp = createApp(skillSection)
 const headerSectionApp = createApp(headerSection)
 const navSectionApp = createApp(navSection)
-const educationSectionApp = createApp(educationSection)
+// const educationSectionApp = createApp(educationSection)
 const footerSectionApp = createApp(footerSection)
 app.use(createPinia())
 
@@ -19,5 +19,5 @@ app.mount('#project')
 skillSectionApp.mount('#skill')
 headerSectionApp.mount('#header')
 navSectionApp.mount('#nav')
-educationSectionApp.mount('#education')
+// educationSectionApp.mount('#education')
 footerSectionApp.mount('#footer')
