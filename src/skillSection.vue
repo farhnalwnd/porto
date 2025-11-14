@@ -117,8 +117,8 @@ const marqueeTools = ref([
 <template>
   <!-- service -->
   <div class="container mx-auto px-4 py-12">
-    <div class="w-full flex items-center justify-center">
-      <h2 class="text-3xl font-bold text-center mb-8">What I Do</h2>
+    <div class="w-full text-center">
+      <h2 class="text-3xl font-bold mb-8">What I Do</h2>
     </div>
     <div class="grid w-full justify-items-center sm:flex sm:flex-wrap sm:justify-center gap-6">
       <serviceCard :datas="services" />
@@ -127,8 +127,8 @@ const marqueeTools = ref([
 
   <!-- marquee -->
   <div class="container mx-auto px-4 py-12">
-    <div class="w-full flex items-center justify-center">
-      <h2 class="text-3xl font-bold text-center mb-8">Tools I Use</h2>
+    <div class="w-full text-center">
+      <h2 class="text-3xl font-bold mb-8">Tools I Use</h2>
     </div>
     <div
       class="w-full py-4 bg-gray-100 rounded-lg inset-shadow-sm inset-shadow-amber-400 text-white overflow-hidden flex"

@@ -2,14 +2,14 @@
 <template>
   <div class="layoutprofile w-full h-fit bg-amber-200">
     <div class="container mx-auto px-4 pt-4 pb-0 md:pt-20 lg:max-w-5xl">
-      <div class="flex flex-col md:flex-row md:items-center md:justify-evenly">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between">
         <!-- text -->
         <div class="mb-14 md:mb-0 md:w-1/2">
           <h1 class="mb-2">Hello i'm a</h1>
           <p class="text-3xl font-extrabold text-neutral-700 mb-4 uppercase">
             Fullstack <span class="text-neutral-900">Developer</span>
           </p>
-          <p class="text-neutral-800 font-semibold mb-6 text-clip">
+          <p class="text-neutral-800 font-semibold mb-6 text-pretty">
             I'm Farhan Alwanda. I build complete technology solutions. I assemble smart devices,
             analyze collected data, and build functional web applications to manage it.
           </p>

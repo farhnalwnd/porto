@@ -5,10 +5,10 @@
       <div
         class="container max-w-5xl flex-inline space-x-8 justify-center items-center mx-auto px-4 h-full flex -translate-x-3"
       >
-        <a href="#project">Project</a>
-        <a href="#skill">Skills</a>
         <a href="#about">About</a>
         <a href="#education">Education</a>
+        <a href="#skill">Skills</a>
+        <a href="#project">Project</a>
       </div>
     </div>
   </div>

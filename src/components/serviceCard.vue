@@ -4,7 +4,7 @@ defineProps({
 })
 </script>
 <template>
-  <div class="card" v-for="data in datas" :key="data.id">
+  <div class="card text-pretty" v-for="data in datas" :key="data.id">
     <div class="bg-amber-200 rounded-full flex items-center justify-center w-24 h-24 mb-4">
       <img :src="data.icon" :alt="data.alt" class="w-16 h-16 scale-90" />
     </div>

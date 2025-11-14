@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto px-4 py-12">
+  <div class="container mx-auto px-4 py-12 xl:-mt-32">
     <div class="w-full flex items-center justify-center">
       <div
         class="grid w-fit max-w-5xl items-center justify-items-center-safe md:flex md:flex-row gap-6 bg-neutral-700 p-6 rounded-lg shadow-lg overflow-hidden"
@@ -21,15 +21,16 @@
 
         <div class="md:flex-non">
           <h2 class="text-3xl font-bold mb-4">About Me</h2>
-          <p class="mb-4">
-            Hello! I'm [Your Name], a passionate developer with a love for creating dynamic and
-            responsive web applications. With a background in [Your Background], I enjoy turning
-            complex problems into simple, beautiful, and intuitive designs.
+          <p class="mb-4 xl:text-lg text-pretty">
+            Hello! I'm <strong>Farhan Alwanda</strong>, a passionate developer with a love for
+            creating dynamic and responsive web applications. With a background in web development,
+            data analysis, and IoT development. I enjoy turning complex problems into simple,
+            beautiful, and intuitive designs.
           </p>
-          <p>
-            When I'm not coding, you'll find me exploring the latest tech trends, contributing to
-            open-source projects, or indulging in my hobbies like [Your Hobbies]. Let's connect and
-            create something amazing together!
+          <p class="text-pretty">
+            When I'm not coding, you'll find me exploring the latest tech trends, creating some
+            projects, or indulging in my hobbies like playing basketball or running and also hanging
+            out with friends. Let's connect and create something amazing together!
           </p>
         </div>
       </div>

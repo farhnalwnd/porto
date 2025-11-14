@@ -27,11 +27,11 @@ const modules = [Mousewheel, Pagination]
     class="mySwiper"
   >
     <swiper-slide v-for="data in datas" :key="data.id">
-      <div class="py-4 h-full text-center flex flex-col justify-end gap-14">
+      <div class="py-4 h-full text-center flex flex-col justify-end gap-7">
         <div class="w-full">
-          <h3 class="text-2xl font-bold">{{ data.company }}</h3>
-          <p class="text-lg">{{ data.division }}</p>
-          <p class="text-sm text-gray-400">{{ data.period }}</p>
+          <h3 class="text-2xl font-bold py-2 text-pretty">{{ data.company }}</h3>
+          <p class="text-lg py-2 text-pretty">{{ data.division }}</p>
+          <p class="text-sm text-gray-400 py-2 text-pretty">{{ data.period }}</p>
         </div>
         <div>
           <h1 class="text-sm sm:text-lg py-2 text-amber-400">

@@ -145,7 +145,7 @@ const currentSwiperConfig = computed(() => {
         <div class="flex items-center justify-center">
           <h2 class="text-3xl font-bold text-center">Project Portofolio</h2>
         </div>
-        <p class="mt-4 text-center">
+        <p class="mt-4 text-center text-pretty xl:text-lg">
           Ini adalah tulisan yang Anda minta. Di layar besar, tulisan ini akan berada di sebelah
           kiri slider. Di layar kecil, tulisan ini akan berada di atas slider.
         </p>

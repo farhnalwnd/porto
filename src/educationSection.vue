@@ -30,8 +30,8 @@ const educationHistory = ref([
 
 <template>
   <div class="container mx-auto px-4 py-12">
-    <div class="w-full flex items-center justify-center">
-      <h2 class="text-3xl font-bold text-center">Education History</h2>
+    <div class="w-full text-center">
+      <h2 class="text-3xl font-bold mb-8">Education History</h2>
     </div>
     <div class="grid w-full justify-items-center sm:flex sm:flex-wrap sm:justify-center gap-6">
       <serviceCard :datas="educationHistory" />
