@@ -3,6 +3,7 @@ import { ref, onMounted, onUnmounted, computed } from 'vue'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import ProjectCard from './components/ProjectCard.vue'
 import { EffectCreative, Scrollbar } from 'swiper/modules'
+import cursorGlow from './components/cursorGlow.vue'
 import 'swiper/css/effect-creative'
 import 'swiper/css/bundle'
 
@@ -139,11 +140,12 @@ const currentSwiperConfig = computed(() => {
 </script>
 
 <template>
+  <cursorGlow />
   <div class="container mx-auto px-4 py-12">
     <div class="flex flex-col lg:flex-row lg:gap-8">
       <div class="w-full lg:w-1/3 mb-8 lg:mb-0 lg:flex lg:flex-col lg:justify-center">
-        <h2 class="text-3xl font-bold text-gray-800 lg:text-center">Proyek Unggulan Kami</h2>
-        <p class="mt-4 text-gray-600 lg:text-center">
+        <h2 class="text-3xl font-bold lg:text-center">Proyek Unggulan Kami</h2>
+        <p class="mt-4 lg:text-center">
           Ini adalah tulisan yang Anda minta. Di layar besar, tulisan ini akan berada di sebelah
           kiri slider. Di layar kecil, tulisan ini akan berada di atas slider.
         </p>
@@ -169,8 +171,10 @@ const currentSwiperConfig = computed(() => {
                 <img :src="project.path" :alt="project.title" />
               </template>
               <template #default>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, necessitatibus, est
-                voluptatem beatae nam adipisci asperiores quod quis, alias facilis quibusdam.
+                <p class="text-neutral-800">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, necessitatibus, est
+                  voluptatem beatae nam adipisci asperiores quod quis, alias facilis quibusdam.
+                </p>
               </template>
             </ProjectCard>
           </SwiperSlide>

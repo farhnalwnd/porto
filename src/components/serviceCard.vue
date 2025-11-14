@@ -11,6 +11,6 @@
 <style scoped>
 @reference 'tailwindcss';
 .card {
-  @apply flex flex-col bg-neutral-700 items-center justify-center rounded-xl p-4 m-3 shadow-md shadow-amber-200 space-x-3 space-y-3 hover:shadow-lg hover:scale-105 transition-transform duration-300;
+  @apply flex flex-col bg-neutral-700 items-center justify-center rounded-xl p-4 m-3 shadow-md shadow-amber-200 space-x-3 space-y-3 hover:shadow-lg hover:scale-105 lg:w-1/4 transition duration-300;
 }
 </style>

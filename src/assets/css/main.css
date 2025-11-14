@@ -1,5 +1,30 @@
 @import 'tailwindcss';
 
+@layer base {
+  h2 {
+    @apply relative inline-block py-2;
+    @apply after:content-[''];
+    @apply after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-linear-to-r after:from-amber-200 after:via-amber-700 after:to-amber-200;
+    @apply after:transform after:scale-x-0 after:origin-center;
+    @apply after:transition-transform after:duration-300;
+    @apply hover:after:scale-x-100;
+    @apply text-amber-500;
+  }
+  h3 {
+    @apply text-amber-400;
+  }
+  p {
+    @apply text-amber-200;
+  }
+  body {
+    background-image: url('/bg.jpg');
+    @apply bg-center bg-repeat;
+  }
+  html {
+    scroll-behavior: contain;
+  }
+}
+
 @theme {
   --animate-marquee-scroll: marquee-scroll 40s linear infinite;
   @keyframes marquee-scroll {
@@ -38,6 +63,16 @@
     100% {
       opacity: 0;
       transform: translateX(-100%);
+    }
+  }
+  --hover-header-animation: hover-header-animation 0.3s ease-in-out;
+  @keyframes hover-header-animation {
+    0% {
+      opacitiy: 0;
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
     }
   }
 }
