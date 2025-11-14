@@ -26,7 +26,7 @@
             class="w-64 h-64 rounded-full border-4 border-white shadow-lg md:ml-6 overflow-hidden"
           >
             <img
-              src="/public/pict-og.png"
+              src="/pict-og.png"
               alt="Profile Image"
               class="-translate-y-24 scale-125 -translate-x-4"
             />

@@ -1,18 +1,18 @@
 <template>
-  <div class="container mx-auto px-3 py-12">
+  <div class="container mx-auto px-4 py-12">
     <div class="w-full flex items-center justify-center">
       <div
         class="grid w-fit max-w-5xl items-center justify-items-center-safe md:flex md:flex-row gap-6 bg-neutral-700 p-6 rounded-lg shadow-lg overflow-hidden"
       >
         <div class="relative shrink-0">
           <img
-            src="/public/bg-foto.jpg"
+            src="/bg-foto.jpg"
             alt="full-body-image"
             class="w-full h-auto max-h-[500px] max-w-[460px] object-cover rounded-lg shadow-lg"
           />
           <div class="absolute bottom-0">
             <img
-              src="/public/full-body.png"
+              src="/full-body.png"
               alt="full-body-image"
               class="w-full h-auto object-cover rounded-lg shadow-lg"
             />

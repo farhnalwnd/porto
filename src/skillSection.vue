@@ -116,7 +116,7 @@ const marqueeTools = ref([
 </script>
 <template>
   <!-- service -->
-  <div class="container mx-auto px-4 py-12 md:-mt-24 lg:-mt-36">
+  <div class="container mx-auto px-4 py-12">
     <div class="w-full flex items-center justify-center">
       <h2 class="text-3xl font-bold text-center mb-8">What I Do</h2>
     </div>
