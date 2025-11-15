@@ -10,43 +10,51 @@ import 'swiper/css/bundle'
 const projectImages = ref([
   {
     id: 1,
-    path: 'logo.png',
+    path: '/portofolio/porto-vote.png',
     title: 'Project 1',
+    project: 'Voting App',
+    deascription:
+      'Built using native PHP, MySQL, and Bootstrap. This application allows users to vote, while administrators can manage user data, voting objects, and view event statistics through the CRUD panel.',
   },
   {
     id: 2,
-    path: 'logo.png',
+    path: '/portofolio/porto-web.png',
     title: 'Project 2',
+    project: 'budgeting system',
+    deascription:
+      'Developed with Laravel, Tailwind CSS, and jQuery. This system manages budget requests per department, supports budget transfers between departments, and is equipped with approval and email notification features.',
   },
   {
     id: 3,
-    path: 'logo.png',
+    path: '/portofolio/porto-mormade.png',
+    project: 'Mormade Website',
     title: 'Project 3',
+    deascription:
+      'Built with Filament, Livewire, and Tailwind CSS. The backend system is operational, while the frontend is still under development. This website serves as an external site for the Mormade brand.',
   },
   {
     id: 4,
-    path: 'logo.png',
+    path: '/portofolio/porto-rs.png',
+    project: 'Requisition System',
     title: 'Project 4',
+    deascription:
+      'Built with Laravel, Tailwind CSS, and jQuery. This system manages warehouse requisitions, equipped with multi-level approval request features and status notifications via email.',
   },
   {
     id: 5,
-    path: 'logo.png',
+    path: '/portofolio/porto-foto.png',
+    project: 'Statistics Dashboard',
     title: 'Project 5',
+    deascription:
+      'A statistics dashboard created using Tableau, with data sourced from CSV files. This project was created for the purpose of learning data visualization from various sources.',
   },
   {
     id: 6,
-    path: 'logo.png',
+    path: '/portofolio/porto-budgeting.png',
+    project: 'Voice Navigation Website',
     title: 'Project 6',
-  },
-  {
-    id: 7,
-    path: 'logo.png',
-    title: 'Project 7',
-  },
-  {
-    id: 8,
-    path: 'logo.png',
-    title: 'Project 8',
+    deascription:
+      'Built using Django. This website can navigate between pages using voice commands and has a text-to-speech feature to read the page content aloud.',
   },
 ])
 
@@ -145,10 +153,11 @@ const currentSwiperConfig = computed(() => {
         <div class="flex items-center justify-center">
           <h2 class="text-3xl font-bold text-center">Project Portofolio</h2>
         </div>
-        <p class="mt-4 text-center text-pretty xl:text-lg">
-          Ini adalah tulisan yang Anda minta. Di layar besar, tulisan ini akan berada di sebelah
-          kiri slider. Di layar kecil, tulisan ini akan berada di atas slider.
-        </p>
+        <div class="flex mt-4 w-full justify-center">
+          <p class="text-center text-pretty xl:text-lg">
+            Here are some projects I have worked on, both individually and as part of a team.
+          </p>
+        </div>
       </div>
 
       <div class="w-full lg:w-2/3">
@@ -168,13 +177,18 @@ const currentSwiperConfig = computed(() => {
           <SwiperSlide v-for="project in projectImages" :key="project.id">
             <ProjectCard>
               <template #images>
-                <img :src="project.path" :alt="project.title" loading="lazy" />
+                <img
+                  :src="project.path"
+                  :alt="project.title"
+                  loading="lazy"
+                  class="w-full h-full object-cover"
+                />
               </template>
               <template #default>
-                <p class="text-neutral-800">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, necessitatibus, est
-                  voluptatem beatae nam adipisci asperiores quod quis, alias facilis quibusdam.
+                <p class="text-amber-400">
+                  <strong>{{ project.project }}</strong>
                 </p>
+                <p class="text-pretty text-sm mt-2">{{ project.deascription }}</p>
               </template>
             </ProjectCard>
           </SwiperSlide>
@@ -190,6 +204,6 @@ const currentSwiperConfig = computed(() => {
   @apply object-cover;
 }
 .swiper-slide {
-  @apply rounded-2xl;
+  @apply rounded-2xl flex items-center justify-center;
 }
 </style>
