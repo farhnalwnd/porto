@@ -11,7 +11,7 @@ const projectImages = ref([
   {
     id: 1,
     path: '/portofolio/porto-vote.png',
-    title: 'Project 1',
+    title: 'vote-app',
     project: 'Voting App',
     deascription:
       'Built using native PHP, MySQL, and Bootstrap. This application allows users to vote, while administrators can manage user data, voting objects, and view event statistics through the CRUD panel.',
@@ -19,8 +19,8 @@ const projectImages = ref([
   {
     id: 2,
     path: '/portofolio/porto-web.png',
-    title: 'Project 2',
-    project: 'budgeting system',
+    title: 'budgeting-system',
+    project: 'Budgeting System',
     deascription:
       'Developed with Laravel, Tailwind CSS, and jQuery. This system manages budget requests per department, supports budget transfers between departments, and is equipped with approval and email notification features.',
   },
@@ -28,7 +28,7 @@ const projectImages = ref([
     id: 3,
     path: '/portofolio/porto-mormade.png',
     project: 'Mormade Website',
-    title: 'Project 3',
+    title: 'mormade-website',
     deascription:
       'Built with Filament, Livewire, and Tailwind CSS. The backend system is operational, while the frontend is still under development. This website serves as an external site for the Mormade brand.',
   },
@@ -36,7 +36,7 @@ const projectImages = ref([
     id: 4,
     path: '/portofolio/porto-rs.png',
     project: 'Requisition System',
-    title: 'Project 4',
+    title: 'requisition-system',
     deascription:
       'Built with Laravel, Tailwind CSS, and jQuery. This system manages warehouse requisitions, equipped with multi-level approval request features and status notifications via email.',
   },
@@ -44,7 +44,7 @@ const projectImages = ref([
     id: 5,
     path: '/portofolio/porto-foto.png',
     project: 'Statistics Dashboard',
-    title: 'Project 5',
+    title: 'statistics-dashboard',
     deascription:
       'A statistics dashboard created using Tableau, with data sourced from CSV files. This project was created for the purpose of learning data visualization from various sources.',
   },
@@ -52,7 +52,7 @@ const projectImages = ref([
     id: 6,
     path: '/portofolio/porto-budgeting.png',
     project: 'Voice Navigation Website',
-    title: 'Project 6',
+    title: 'voice-navigation-website',
     deascription:
       'Built using Django. This website can navigate between pages using voice commands and has a text-to-speech feature to read the page content aloud.',
   },
@@ -155,7 +155,10 @@ const currentSwiperConfig = computed(() => {
         </div>
         <div class="flex mt-4 w-full justify-center">
           <p class="text-center text-pretty xl:text-lg">
-            Here are some projects I have worked on, both individually and as part of a team.
+            Here are some projects I have worked on, both individually and as part of a team. <br />
+            <span class="mt-2 text-amber-300">
+              <strong> slide card horizontally to see more! </strong>
+            </span>
           </p>
         </div>
       </div>
@@ -185,10 +188,10 @@ const currentSwiperConfig = computed(() => {
                 />
               </template>
               <template #default>
-                <p class="text-amber-400">
+                <p class="text-amber-400 lg:text-xl">
                   <strong>{{ project.project }}</strong>
                 </p>
-                <p class="text-pretty text-sm mt-2">{{ project.deascription }}</p>
+                <p class="text-pretty text-sm mt-2 lg:text-lg">{{ project.deascription }}</p>
               </template>
             </ProjectCard>
           </SwiperSlide>

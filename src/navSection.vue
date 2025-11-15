@@ -7,6 +7,7 @@
       >
         <a href="#about">About</a>
         <a href="#education">Education</a>
+        <a href="#work">Work Experience</a>
         <a href="#skill">Skills</a>
         <a href="#project">Project</a>
       </div>

@@ -16,28 +16,32 @@ const services = ref([
     icon: '/icons/iot.svg',
     alt: 'iot-icon',
     title: 'IoT Developer',
-    description: 'Creating user-friendly mobile applications for Android and iOS platforms.',
+    description:
+      'Developing solutions for smart devices, sensors, and integrating hardware with internet-based data systems.',
   },
   {
     id: 3,
     icon: '/icons/data-science.svg',
     alt: 'data-science-icon',
     title: 'Data Science',
-    description: 'Designing intuitive user interfaces and enhancing user experience.',
+    description:
+      'Extracting valuable insights from data using statistical analysis, and data visualization.',
   },
   {
     id: 4,
     icon: '/icons/devops.svg',
     alt: 'devops-icon',
     title: 'DevOps Engineer',
-    description: 'Designing intuitive user interfaces and enhancing user experience.',
+    description:
+      'Streamlining software development and operations using automation, CI/CD pipelines, and infrastructure management.',
   },
   {
     id: 5,
     icon: '/icons/web-design.svg',
     alt: 'web-design-icon',
     title: 'Web Design',
-    description: 'Designing intuitive user interfaces and enhancing user experience.',
+    description:
+      'Creating visually appealing and user-friendly website layouts, focusing on UI/UX and brand identity.',
   },
 ])
 
@@ -118,7 +122,7 @@ const marqueeTools = ref([
   <!-- service -->
   <div class="container mx-auto px-4 py-12">
     <div class="w-full text-center">
-      <h2 class="text-3xl font-bold mb-8">What I Do</h2>
+      <h2 class="text-3xl font-bold mb-8">Skills</h2>
     </div>
     <div class="grid w-full justify-items-center sm:flex sm:flex-wrap sm:justify-center gap-6">
       <serviceCard :datas="services" />
@@ -128,7 +132,7 @@ const marqueeTools = ref([
   <!-- marquee -->
   <div class="container mx-auto px-4 py-12">
     <div class="w-full text-center">
-      <h2 class="text-3xl font-bold mb-8">Tools I Use</h2>
+      <h2 class="text-3xl font-bold mb-8">Tools & Tech</h2>
     </div>
     <div
       class="w-full py-4 bg-gray-100 rounded-lg inset-shadow-sm inset-shadow-amber-400 text-white overflow-hidden flex"
