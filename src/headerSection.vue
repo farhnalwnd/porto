@@ -53,6 +53,6 @@
 <style scoped>
 @reference 'tailwindcss';
 .layoutprofile {
-  @apply w-full h-fit  bg-linear-to-b from-amber-300 from-20% to-amber-500 to-80%;
+  @apply w-full h-fit  bg-linear-to-b from-amber-300 from-15% to-amber-500 to-75%;
 }
 </style>
