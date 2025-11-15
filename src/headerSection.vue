@@ -10,8 +10,8 @@
             Fullstack <span class="text-neutral-900">Developer</span>
           </p>
           <p class="text-neutral-800 font-semibold mb-6 text-pretty">
-            I'm Farhan Alwanda. I build complete technology solutions. I assemble smart devices,
-            analyze collected data, and build functional web applications to manage it.
+            I'm Farhan Alwanda, a Technology Solutions Developer. Specializations: Smart Device
+            Assembly, Data Analysis, and Web Application Development.
           </p>
           <a
             href="#footer"
