@@ -1,8 +1,7 @@
 <script setup>
 import { ref } from 'vue'
-import serviceCard from './components/serviceCard.vue'
+import serviceCard from '@/components/serviceCard.vue'
 
-// Data (Anda bisa ganti ini dengan data Anda)
 const educationHistory = ref([
   {
     id: 1,
@@ -39,6 +38,4 @@ const educationHistory = ref([
   </div>
 </template>
 
-<style scoped>
-/* Anda bisa menambahkan style khusus di sini jika perlu */
-</style>
+<style scoped></style>

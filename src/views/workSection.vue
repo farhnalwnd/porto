@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import mouseSlider from './components/mouseSlider.vue'
+import mouseSlider from '@/components/mouseSlider.vue'
 
 const workDatas = ref([
   {

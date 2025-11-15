@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue'
-import serviceCard from './components/serviceCard.vue'
-import ToolsMarque from './components/toolsMarque.vue'
+import serviceCard from '@/components/serviceCard.vue'
+import ToolsMarque from '@/components/toolsMarque.vue'
 
 const services = ref([
   {

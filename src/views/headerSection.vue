@@ -1,4 +1,20 @@
-<script setup></script>
+<script setup>
+import { ref, onMounted } from 'vue'
+import Typed from 'typed.js'
+
+const typingElement = ref(null)
+
+onMounted(() => {
+  const options = {
+    strings: ['Fullstack Developer', 'Data Analyst', 'IoT Developer', 'Freelancer'],
+    typeSpeed: 100,
+    backSpeed: 50,
+    loop: true,
+  }
+
+  new Typed(typingElement.value, options)
+})
+</script>
 <template>
   <div class="layoutprofile w-full h-fit bg-amber-200">
     <div class="container mx-auto px-4 pt-4 pb-0 md:pt-20 lg:max-w-5xl">
@@ -6,8 +22,9 @@
         <!-- text -->
         <div class="mb-14 md:mb-0 md:w-1/2">
           <h1 class="mb-2">Hello i'm a</h1>
+
           <p class="text-3xl font-extrabold text-neutral-700 mb-4 uppercase">
-            Fullstack <span class="text-neutral-900">Developer</span>
+            <span ref="typingElement"></span>
           </p>
           <p class="text-neutral-800 font-semibold mb-6 text-pretty">
             I'm Farhan Alwanda, a Technology Solutions Developer. Specializations: Smart Device

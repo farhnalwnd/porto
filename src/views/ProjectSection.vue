@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onMounted, onUnmounted, computed } from 'vue'
 import { Swiper, SwiperSlide } from 'swiper/vue'
-import ProjectCard from './components/ProjectCard.vue'
+import ProjectCard from '@/components/ProjectCard.vue'
 import { EffectCreative, Scrollbar } from 'swiper/modules'
 import 'swiper/css/effect-creative'
 import 'swiper/css/bundle'
