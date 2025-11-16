@@ -20,7 +20,7 @@ onMounted(() => {
     <div class="container mx-auto px-4 pt-4 pb-0 md:pt-20 lg:max-w-5xl">
       <div class="flex flex-col md:flex-row md:items-center md:justify-between">
         <!-- text -->
-        <div class="mb-14 md:mb-0 md:w-1/2">
+        <div class="mb-8 md:mb-0 md:w-1/2">
           <h1 class="mb-2">Hello i'm a</h1>
 
           <p class="text-3xl font-extrabold text-neutral-700 mb-4 uppercase">
@@ -39,13 +39,11 @@ onMounted(() => {
         </div>
         <!-- image -->
         <div class="md:w-1/2 flex justify-center z-10">
-          <div
-            class="w-64 h-64 rounded-full border-4 border-white shadow-lg md:ml-6 overflow-hidden"
-          >
+          <div class="w-64 h-64">
             <img
-              src="/pict-og.png"
+              src="/header.png"
               alt="Profile Image"
-              class="-translate-y-24 scale-125 -translate-x-4"
+              class="w-full h-full aspect-square object-cover sm:scale-125"
             />
           </div>
         </div>
