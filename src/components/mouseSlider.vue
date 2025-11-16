@@ -2,16 +2,18 @@
 // 1. Semua import diletakkan di dalam <script setup>
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import 'swiper/css'
+import 'swiper/css/autoplay'
 import 'swiper/css/pagination'
+import 'swiper/css/mousewheel'
 import '@/assets/css/main.css'
-import { Mousewheel, Pagination } from 'swiper/modules'
+import { Autoplay, Mousewheel, Pagination } from 'swiper/modules'
 import textMarque from './textMarque.vue'
 
 defineProps({
   datas: Array,
 })
 
-const modules = [Mousewheel, Pagination]
+const modules = [Mousewheel, Pagination, Autoplay]
 </script>
 
 <template>
@@ -22,6 +24,10 @@ const modules = [Mousewheel, Pagination]
     :mousewheel="true"
     :pagination="{
       clickable: true,
+    }"
+    :autoplay="{
+      delay: 3000,
+      disableOnInteraction: false,
     }"
     :modules="modules"
     class="mySwiper"

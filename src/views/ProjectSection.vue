@@ -2,11 +2,10 @@
 import { ref, onMounted, onUnmounted, computed } from 'vue'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import ProjectCard from '@/components/ProjectCard.vue'
-import { EffectCreative, Scrollbar } from 'swiper/modules'
+import { Autoplay, EffectCreative, Scrollbar } from 'swiper/modules'
 import 'swiper/css/effect-creative'
 import 'swiper/css/bundle'
 
-// ** Data for project images and titles */
 const projectImages = ref([
   {
     id: 1,
@@ -64,7 +63,7 @@ const breakPoint = ref({
   0: {
     swiperSlidePerView: 1,
     swiperSpaceBetween: 15,
-    swiperModules: [Scrollbar],
+    swiperModules: [Scrollbar, Autoplay],
     swiperEffect: 'slide',
     swiperCreative: {},
     swiperScrollbar: { draggable: true },
@@ -72,7 +71,7 @@ const breakPoint = ref({
   640: {
     swiperSlidePerView: 2,
     swiperSpaceBetween: 15,
-    swiperModules: [Scrollbar],
+    swiperModules: [Scrollbar, Autoplay],
     swiperEffect: 'slide',
     swiperCreative: {},
     swiperScrollbar: { draggable: true },
@@ -80,7 +79,7 @@ const breakPoint = ref({
   768: {
     swiperSlidePerView: 3,
     swiperSpaceBetween: 15,
-    swiperModules: [Scrollbar],
+    swiperModules: [Scrollbar, Autoplay],
     swiperEffect: 'slide',
     swiperCreative: {},
     swiperScrollbar: { draggable: true },
@@ -88,7 +87,7 @@ const breakPoint = ref({
   1024: {
     swiperSlidePerView: 1,
     swiperSpaceBetween: 0,
-    swiperModules: [EffectCreative],
+    swiperModules: [EffectCreative, Autoplay],
     swiperEffect: 'creative',
     swiperCreative: {
       prev: {
@@ -104,7 +103,7 @@ const breakPoint = ref({
   1280: {
     swiperSlidePerView: 1,
     swiperSpaceBetween: 0,
-    swiperModules: [EffectCreative],
+    swiperModules: [EffectCreative, Autoplay],
     swiperEffect: 'creative',
     swiperCreative: {
       prev: {
@@ -175,6 +174,10 @@ const currentSwiperConfig = computed(() => {
           :scrollbar="currentSwiperConfig.swiperScrollbar"
           :centered-slides="false"
           :grab-cursor="true"
+          :autoplay="{
+            delay: 3000,
+            disableOnInteraction: false,
+          }"
           class="mySwiper"
         >
           <SwiperSlide v-for="project in projectImages" :key="project.id">

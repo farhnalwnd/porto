@@ -32,7 +32,7 @@ onMounted(() => {
           </p>
           <a
             href="#footer"
-            class="bg-linear-to-br from-neutral-600 from-5% to-neutral-800 to-70% px-5 py-2 rounded-full shadow-md"
+            class="inline-block bg-linear-to-br from-neutral-600 from-5% to-neutral-800 to-70% px-5 py-2 rounded-full shadow-md hover:shadow-md hover:scale-105 hover:bg-linear-to-br hover:from-neutral-700 hover:to-neutral-900 transition duration-300"
           >
             <span class="font-semibold text-amber-300">Reach me out</span></a
           >

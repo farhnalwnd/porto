@@ -10,6 +10,7 @@ defineProps({
     </div>
     <h3 class="text-xl font-semibold mb-2">{{ data.title }}</h3>
     <h3 class="text-amber-200 text-center">{{ data.description }}</h3>
+    <p class="text-center">{{ data.period }}</p>
   </div>
 </template>
 <style scoped>

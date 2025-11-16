@@ -116,6 +116,26 @@ const marqueeTools = ref([
     icon: '/icons/Alpine.svg',
     alt: 'alpine-icon',
   },
+  {
+    id: 15,
+    icon: '/icons/Arduino.svg',
+    alt: 'arduino-icon',
+  },
+  {
+    id: 16,
+    icon: '/icons/affinity.svg',
+    alt: 'affinity-icon',
+  },
+  {
+    id: 17,
+    icon: '/icons/python.svg',
+    alt: 'python-icon',
+  },
+  {
+    id: 18,
+    icon: '/icons/raspberry.svg',
+    alt: 'raspberry-icon',
+  },
 ])
 </script>
 <template>

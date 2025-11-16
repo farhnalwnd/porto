@@ -6,30 +6,37 @@ const sosmedLinks = ref([
   {
     id: 1,
     name: 'Instagram',
-    url: 'https://www.instagram.com/yourprofile',
+    url: 'https://www.instagram.com/farhnalwnd/',
     icon: '/icons/ig.svg',
     alt: 'Instagram',
   },
   {
     id: 2,
     name: 'GitHub',
-    url: 'https://github.com/yourusername',
+    url: 'https://github.com/farhnalwnd',
     icon: '/icons/github.svg',
     alt: 'GitHub',
   },
   {
     id: 3,
     name: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/yourprofile',
+    url: 'https://www.linkedin.com/in/farhan-alwanda/',
     icon: '/icons/linkedin.svg',
     alt: 'LinkedIn',
   },
   {
     id: 4,
     name: 'email',
-    url: 'mailto:your.email@example.com',
+    url: 'mailto:raja.farhan.alwanda@gmail.com',
     icon: '/icons/gmail.svg',
     alt: 'Email',
+  },
+  {
+    id: 5,
+    name: 'whatsapp',
+    url: 'https://wa.me/628978648072',
+    icon: '/icons/wa.svg',
+    alt: 'WhatsApp',
   },
 ])
 
