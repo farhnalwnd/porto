@@ -39,9 +39,9 @@ const modules = [Mousewheel, Pagination, Autoplay]
           <p class="text-sm text-gray-400 py-2 text-pretty">{{ data.period }}</p>
         </div>
         <div>
-          <h1 class="text-sm sm:text-lg py-2 text-amber-400">
+          <p class="text-sm sm:text-lg py-2 text-amber-400">
             Hard Skills and Soft Skills Received:
-          </h1>
+          </p>
           <div
             class="w-full py-2.5 bg-gray-100 rounded-lg inset-shadow-sm inset-shadow-amber-400 text-white overflow-hidden flex"
           >
