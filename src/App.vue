@@ -1,3 +1,7 @@
+<script setup>
+import { SpeedInsights } from '@vercel/speed-insights/vue'
+</script>
+
 <template>
   <header>
     <div id="nav">
@@ -29,6 +33,7 @@
       <FooterSection />
     </div>
   </footer>
+  <SpeedInsights />
 </template>
 
 <script setup>
