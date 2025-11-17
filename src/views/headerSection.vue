@@ -16,7 +16,7 @@ onMounted(() => {
 })
 </script>
 <template>
-  <div class="layoutprofile w-full h-fit bg-amber-200">
+  <div class="layoutprofile w-full h-[600px] md:h-fit bg-amber-200">
     <div class="container mx-auto px-4 pt-4 pb-0 md:pt-20 lg:max-w-5xl">
       <div class="flex flex-col md:flex-row md:items-center md:justify-between">
         <!-- text -->
@@ -32,13 +32,13 @@ onMounted(() => {
           </p>
           <a
             href="#footer"
-            class="inline-block bg-linear-to-br from-neutral-600 from-5% to-neutral-800 to-70% px-5 py-2 rounded-full shadow-md hover:shadow-md hover:scale-105 hover:bg-linear-to-br hover:from-neutral-700 hover:to-neutral-900 transition duration-300"
+            class="inline-block animate-bounce hover:animate-none bg-linear-to-br from-neutral-600 from-5% to-neutral-800 to-70% px-5 py-2 rounded-full shadow-md hover:shadow-md hover:scale-105 hover:bg-linear-to-br hover:from-neutral-700 hover:to-neutral-900 transition duration-300"
           >
             <span class="font-semibold text-amber-300">Reach me out</span></a
           >
         </div>
         <!-- image -->
-        <div class="md:w-1/2 flex justify-center z-10">
+        <div class="md:w-1/2 flex justify-center py-5 z-10">
           <div class="w-64 h-64">
             <img
               src="/header.png"
@@ -68,6 +68,6 @@ onMounted(() => {
 <style scoped>
 @reference 'tailwindcss';
 .layoutprofile {
-  @apply w-full h-fit  bg-linear-to-b from-amber-300 from-15% to-amber-500 to-75%;
+  @apply bg-linear-to-b from-amber-300 from-15% to-amber-500 to-75%;
 }
 </style>

@@ -1,6 +1,8 @@
 <script setup>
-import { ref } from 'vue'
+import { onMounted, onUnmounted, ref } from 'vue'
 import mouseSlider from '@/components/mouseSlider.vue'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const workDatas = ref([
   {
@@ -50,13 +52,30 @@ const workDatas = ref([
     },
   },
 ])
+
+onMounted(() => {
+  Aos.init({
+    disable: false,
+    duration: 1000,
+    offset: 200,
+    once: false,
+    anchorPlacement: 'center-bottom',
+    easing: 'ease-out-cubic',
+  })
+})
+
+onUnmounted(() => {
+  Aos.refresh()
+})
 </script>
 <template>
   <div class="container mx-auto px-4 py-12">
     <div class="w-full text-center">
       <h2 class="text-3xl font-bold mb-8">Work Experience</h2>
     </div>
-    <mouseSlider :datas="workDatas" />
+    <div data-aos="zoom-in-up" class="w-full">
+      <mouseSlider :datas="workDatas" />
+    </div>
   </div>
 </template>
 <style scoped></style>

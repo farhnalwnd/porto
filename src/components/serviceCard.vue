@@ -1,10 +1,43 @@
 <script setup>
-defineProps({
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import { nextTick, onMounted, onUnmounted, watch } from 'vue'
+
+const props = defineProps({
   datas: Array,
+})
+
+onMounted(() => {
+  Aos.init({
+    disable: false,
+    duration: 1000,
+    offset: 200,
+    once: false,
+  })
+})
+
+watch(
+  () => props.datas,
+  async () => {
+    await nextTick()
+    Aos.refresh()
+  },
+  { deep: true },
+)
+
+onUnmounted(() => {
+  Aos.refresh()
 })
 </script>
 <template>
-  <div class="card text-pretty" v-for="data in datas" :key="data.id">
+  <div
+    data-aos="fade-up"
+    data-aos-easing="ease-out-back"
+    data-aos-anchor-placement="center-bottom"
+    class="card text-center text-pretty"
+    v-for="data in datas"
+    :key="data.id"
+  >
     <div class="bg-amber-200 rounded-full flex items-center justify-center w-24 h-24 mb-4">
       <img :src="data.icon" :alt="data.alt" class="w-16 h-16 scale-90" />
     </div>

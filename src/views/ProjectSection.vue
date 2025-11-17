@@ -5,6 +5,7 @@ import ProjectCard from '@/components/ProjectCard.vue'
 import { Autoplay, EffectCreative, Scrollbar } from 'swiper/modules'
 import 'swiper/css/effect-creative'
 import 'swiper/css/bundle'
+import aos from 'aos'
 
 const projectImages = ref([
   {
@@ -124,10 +125,19 @@ const updateWidth = () => {
 
 onMounted(() => {
   window.addEventListener('resize', updateWidth)
+  aos.init({
+    disable: false,
+    duration: 1000,
+    offset: 200,
+    once: false,
+    anchorPlacement: 'center-bottom',
+    easing: 'ease-out-cubic',
+  })
 })
 
 onUnmounted(() => {
   window.removeEventListener('resize', updateWidth)
+  aos.refresh()
 })
 
 const currentSwiperConfig = computed(() => {
@@ -154,15 +164,12 @@ const currentSwiperConfig = computed(() => {
         </div>
         <div class="flex mt-4 w-full justify-center">
           <p class="text-center text-pretty xl:text-lg">
-            Here are some projects I have worked on, both individually and as part of a team. <br />
-            <span class="mt-2 text-amber-300">
-              <strong> slide card horizontally to see more! </strong>
-            </span>
+            Here are some projects I have worked on, both individually and as part of a team.
           </p>
         </div>
       </div>
 
-      <div class="w-full lg:w-2/3">
+      <div data-aos="zoom-in-up" class="w-full lg:w-2/3">
         <Swiper
           :key="currentSwiperConfig.swiperEffect"
           :slides-per-view="currentSwiperConfig.swiperSlidePerView"
@@ -175,7 +182,7 @@ const currentSwiperConfig = computed(() => {
           :centered-slides="false"
           :grab-cursor="true"
           :autoplay="{
-            delay: 3000,
+            delay: 4000,
             disableOnInteraction: false,
           }"
           class="mySwiper"
