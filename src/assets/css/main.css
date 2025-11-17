@@ -17,7 +17,7 @@
     @apply text-amber-200;
   }
   body {
-    background-image: url('/bg.jpg');
+    background-image: url('/bahan/bg.jpg');
     @apply bg-center bg-repeat;
   }
   html {
