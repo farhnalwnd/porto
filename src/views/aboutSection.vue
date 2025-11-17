@@ -37,7 +37,7 @@ onUnmounted(() => {
               src="/bahan/full-body.webp"
               alt="developer-img"
               data-aos="fade-up"
-              data-aos-delay="300"
+              data-aos-delay="100"
               class="w-full h-auto object-cover rounded-lg shadow-lg"
             />
           </div>
@@ -45,7 +45,7 @@ onUnmounted(() => {
 
         <div class="md:flex-non">
           <h2 data-aos="fade-left" class="text-3xl font-bold mb-4">About Me</h2>
-          <p data-aos="fade-left" data-aos-delay="100" class="mb-4 xl:text-lg text-pretty">
+          <p data-aos="fade-left" data-aos-delay="150" class="mb-4 xl:text-lg text-pretty">
             Hello! I'm <strong>Farhan Alwanda</strong>, a passionate developer with a love for
             creating dynamic and responsive web applications. With a background in web development,
             data analysis, and IoT development. I enjoy turning complex problems into simple,
