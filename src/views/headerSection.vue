@@ -43,6 +43,8 @@ onMounted(() => {
             <img
               src="/bahan/header.webp"
               alt="farhan alwanda image"
+              fetchpriority="high"
+              loading="lazy"
               class="w-full h-full aspect-square object-cover sm:scale-125"
             />
           </div>
