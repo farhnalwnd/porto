@@ -10,7 +10,7 @@ import aos from 'aos'
 const projectImages = ref([
   {
     id: 1,
-    path: '/portofolio/porto-vote.png',
+    path: '/portofolio/porto-vote.webp',
     title: 'Aplikasi Sistem Voting Online berbasis PHP Native dan Bootstrap',
     project: 'Voting App',
     deascription:
@@ -18,7 +18,7 @@ const projectImages = ref([
   },
   {
     id: 2,
-    path: '/portofolio/porto-web.png',
+    path: '/portofolio/porto-web.webp',
     title: 'Sistem Penganggaran Perusahaan berbasis Laravel dan Tailwind CSS',
     project: 'Budgeting System',
     deascription:
@@ -26,7 +26,7 @@ const projectImages = ref([
   },
   {
     id: 3,
-    path: '/portofolio/porto-mormade.png',
+    path: '/portofolio/porto-mormade.webp',
     project: 'Mormade Website',
     title: 'Mormade Web Platform & CMS',
     deascription:
@@ -34,7 +34,7 @@ const projectImages = ref([
   },
   {
     id: 4,
-    path: '/portofolio/porto-rs.png',
+    path: '/portofolio/porto-rs.webp',
     project: 'Requisition System',
     title: 'Aplikasi Sistem Requisition & Manajemen Gudang berbasis Laravel',
     deascription:
@@ -42,7 +42,7 @@ const projectImages = ref([
   },
   {
     id: 5,
-    path: '/portofolio/porto-foto.png',
+    path: '/portofolio/porto-foto.webp',
     project: 'Statistics Dashboard',
     title: 'Dashboard Analitik dan Visualisasi Data menggunakan Tableau',
     deascription:
@@ -50,7 +50,7 @@ const projectImages = ref([
   },
   {
     id: 6,
-    path: '/portofolio/porto-budgeting.png',
+    path: '/portofolio/porto-budgeting.webp',
     project: 'Voice Navigation Website',
     title: 'voice-navigation-website',
     deascription:

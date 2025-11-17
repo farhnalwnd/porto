@@ -41,7 +41,7 @@ onMounted(() => {
         <div class="md:w-1/2 flex justify-center py-5 z-10">
           <div class="w-64 h-64">
             <img
-              src="/bahan/header.png"
+              src="/bahan/header.webp"
               alt="farhan alwanda image"
               class="w-full h-full aspect-square object-cover sm:scale-125"
             />

@@ -27,14 +27,14 @@ onUnmounted(() => {
       >
         <div class="relative shrink-0">
           <img
-            src="/bahan/bg-foto.jpg"
+            src="/bahan/bg-foto.webp"
             alt="developer-img"
             data-aos="zoom-in"
             class="w-full h-auto max-h-[500px] max-w-[460px] object-cover rounded-lg shadow-lg"
           />
           <div class="absolute bottom-0">
             <img
-              src="/bahan/full-body.png"
+              src="/bahan/full-body.webp"
               alt="developer-img"
               data-aos="fade-up"
               data-aos-delay="300"
