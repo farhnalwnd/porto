@@ -1,4 +1,12 @@
 <script setup>
+import NavSection from '@/views/navSection.vue'
+import HeaderSection from '@/views/headerSection.vue'
+import AboutSection from '@/views/aboutSection.vue'
+import EducationSection from '@/views/educationSection.vue'
+import WorkSection from '@/views/workSection.vue'
+import SkillSection from '@/views/skillSection.vue'
+import ProjectSection from '@/views/ProjectSection.vue'
+import FooterSection from '@/views/footerSection.vue'
 import { SpeedInsights } from '@vercel/speed-insights/vue'
 </script>
 
@@ -35,15 +43,3 @@ import { SpeedInsights } from '@vercel/speed-insights/vue'
   </footer>
   <SpeedInsights />
 </template>
-
-<script setup>
-// Impor semua section Anda
-import NavSection from '@/views/navSection.vue'
-import HeaderSection from '@/views/headerSection.vue'
-import AboutSection from '@/views/aboutSection.vue'
-import EducationSection from '@/views/educationSection.vue'
-import WorkSection from '@/views/workSection.vue'
-import SkillSection from '@/views/skillSection.vue'
-import ProjectSection from '@/views/ProjectSection.vue'
-import FooterSection from '@/views/footerSection.vue'
-</script>
