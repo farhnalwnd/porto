@@ -7,7 +7,7 @@ onMounted(() => {
   Aos.init({
     duration: 1000,
     easing: 'ease-out-cubic',
-    once: false,
+    once: true,
     offset: 120,
   })
 })
@@ -27,15 +27,15 @@ onUnmounted(() => {
       >
         <div class="relative shrink-0">
           <img
-            src="/bg-foto.jpg"
-            alt="full-body-image"
+            src="/bahan/bg-foto.jpg"
+            alt="developer-img"
             data-aos="zoom-in"
             class="w-full h-auto max-h-[500px] max-w-[460px] object-cover rounded-lg shadow-lg"
           />
           <div class="absolute bottom-0">
             <img
-              src="/full-body.png"
-              alt="full-body-image"
+              src="/bahan/full-body.png"
+              alt="developer-img"
               data-aos="fade-up"
               data-aos-delay="300"
               class="w-full h-auto object-cover rounded-lg shadow-lg"

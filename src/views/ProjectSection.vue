@@ -11,7 +11,7 @@ const projectImages = ref([
   {
     id: 1,
     path: '/portofolio/porto-vote.png',
-    title: 'vote-app',
+    title: 'Aplikasi Sistem Voting Online berbasis PHP Native dan Bootstrap',
     project: 'Voting App',
     deascription:
       'Built using native PHP, MySQL, and Bootstrap. This application allows users to vote, while administrators can manage user data, voting objects, and view event statistics through the CRUD panel.',
@@ -19,7 +19,7 @@ const projectImages = ref([
   {
     id: 2,
     path: '/portofolio/porto-web.png',
-    title: 'budgeting-system',
+    title: 'Sistem Penganggaran Perusahaan berbasis Laravel dan Tailwind CSS',
     project: 'Budgeting System',
     deascription:
       'Developed with Laravel, Tailwind CSS, and jQuery. This system manages budget requests per department, supports budget transfers between departments, and is equipped with approval and email notification features.',
@@ -28,7 +28,7 @@ const projectImages = ref([
     id: 3,
     path: '/portofolio/porto-mormade.png',
     project: 'Mormade Website',
-    title: 'mormade-website',
+    title: 'Mormade Web Platform & CMS',
     deascription:
       'Built with Filament, Livewire, and Tailwind CSS. The backend system is operational, while the frontend is still under development. This website serves as an external site for the Mormade brand.',
   },
@@ -36,7 +36,7 @@ const projectImages = ref([
     id: 4,
     path: '/portofolio/porto-rs.png',
     project: 'Requisition System',
-    title: 'requisition-system',
+    title: 'Aplikasi Sistem Requisition & Manajemen Gudang berbasis Laravel',
     deascription:
       'Built with Laravel, Tailwind CSS, and jQuery. This system manages warehouse requisitions, equipped with multi-level approval request features and status notifications via email.',
   },
@@ -44,7 +44,7 @@ const projectImages = ref([
     id: 5,
     path: '/portofolio/porto-foto.png',
     project: 'Statistics Dashboard',
-    title: 'statistics-dashboard',
+    title: 'Dashboard Analitik dan Visualisasi Data menggunakan Tableau',
     deascription:
       'A statistics dashboard created using Tableau, with data sourced from CSV files. This project was created for the purpose of learning data visualization from various sources.',
   },

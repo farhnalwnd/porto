@@ -8,7 +8,6 @@ const workDatas = ref([
   {
     id: 1,
     company: 'PT.Sinar Meadow International Indonesia',
-    img: '/smii.png',
     division: 'Internship - Web Developer',
     period: 'april 2025 - Present',
     tools: {
@@ -24,7 +23,6 @@ const workDatas = ref([
   {
     id: 2,
     company: 'PT.SGMW Motor Indonesia (Wuling Motors)',
-    img: '/smii.png',
     division: 'Internship - IT System',
     period: 'september 2024 - december 2024',
     tools: {
@@ -40,7 +38,6 @@ const workDatas = ref([
   {
     id: 3,
     company: 'GaoTek Inc.',
-    img: '/icon/ig.svg',
     division: 'Internship - Web Developer',
     period: 'august 2024 - october 2024',
     tools: {

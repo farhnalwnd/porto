@@ -28,10 +28,6 @@ const educationHistory = ref([
     period: '2016-2019',
   },
 ])
-
-// const mediaWidth = window.innerWidth;
-// const  isMobile = ref(mediaWidth <= 1024);
-// const aosFormat = ref(isMobile.value ? 'fade-up' : 'fade-right');
 </script>
 
 <template>

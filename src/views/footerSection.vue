@@ -8,35 +8,35 @@ const sosmedLinks = ref([
     name: 'Instagram',
     url: 'https://www.instagram.com/farhnalwnd/',
     icon: '/icons/ig.svg',
-    alt: 'Instagram',
+    alt: 'Instagram-farhan-alwanda',
   },
   {
     id: 2,
     name: 'GitHub',
     url: 'https://github.com/farhnalwnd',
     icon: '/icons/github.svg',
-    alt: 'GitHub',
+    alt: 'GitHub-farhan-alwanda',
   },
   {
     id: 3,
     name: 'LinkedIn',
     url: 'https://www.linkedin.com/in/farhan-alwanda/',
     icon: '/icons/linkedin.svg',
-    alt: 'LinkedIn',
+    alt: 'LinkedIn-farhan-alwanda',
   },
   {
     id: 4,
     name: 'email',
     url: 'mailto:raja.farhan.alwanda@gmail.com',
     icon: '/icons/gmail.svg',
-    alt: 'Email',
+    alt: 'Email-farhan-alwanda',
   },
   {
     id: 5,
     name: 'whatsapp',
     url: 'https://wa.me/628978648072',
     icon: '/icons/wa.svg',
-    alt: 'WhatsApp',
+    alt: 'WhatsApp-farhan-alwanda',
   },
 ])
 
@@ -79,6 +79,4 @@ const scrollToTop = () => {
   </footer>
 </template>
 
-<style scoped>
-/* Anda bisa menambahkan style scoped di sini jika perlu */
-</style>
+<style scoped></style>
